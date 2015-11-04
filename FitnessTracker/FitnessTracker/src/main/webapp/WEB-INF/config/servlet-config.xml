@@ -10,7 +10,11 @@
 	
 	<mvc:annotation-driven/>
 	
+	<mvc:resources location="pdfs" mapping="/pdfs/**"/> <!-- ** means can look for anything -->
+	
 	<context:component-scan base-package="org.luke.controller"/>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basename="messages"></bean>
 
 <!-- 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> -->
 <!-- 		<property name="prefix" value="/WEB-INF/jsp/"/> -->

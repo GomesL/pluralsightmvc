@@ -9,8 +9,7 @@ public class HelloController {
 
 	@RequestMapping(value ="/greeting")
 	public String sayHello(Model model){
-		model.addAttribute("greeting", "Luke Gomes");
-		model.addAttribute("greeting2", "Lsgsdggggggggggggggggggggggggggg Lsgsdggggggggggggggggggggggggggg Lsgsdggggggggggggggggggggggggggg \n Lsgsdggggggggggggggggggggggggggg Lsgsdggggggggggggggggggggggggggg Lsgsdggggggggggggggggggggggggggg");
+		model.addAttribute("greeting", "Luke \n Gomes");
 		return "hello"; // return name should be equal to file name
 	}
 	

@@ -8,7 +8,5 @@
 </head>
 <body>
 	<h1>${greeting}</h1>
-	<br>
-	<h1>${greeting2}</h1>
 </body>
 </html>
