@@ -1,6 +1,9 @@
 package org.luke.model;
 
+import org.hibernate.validator.constraints.Range;
+
 public class Goal {
+	@Range(min=1 ,max=600)
 	private int minutes;
 
 	public int getMinutes() {
