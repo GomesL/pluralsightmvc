@@ -12,7 +12,7 @@
 	
 	<mvc:resources location="pdfs" mapping="/pdfs/**"/> <!-- ** means can look for anything -->
 	
-	<context:component-scan base-package="org.luke.controller"/>
+	<context:component-scan base-package="org.luke"/>
 	
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 		<property name="order" value="1"/>
